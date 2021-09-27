@@ -1,0 +1,23 @@
+{
+  "name": "windicss-plugin-font-size",
+  "version": "1.0.0",
+  "description": "Missing pure font-size plugin for Windicss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idmytro/windicss-plugin-font-size.git"
+  },
+  "keywords": [],
+  "author": "Dmytro Cisar <dmytro.cisar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idmytro/windicss-plugin-font-size/issues"
+  },
+  "homepage": "https://github.com/idmytro/windicss-plugin-font-size#readme",
+  "dependencies": {
+    "windicss": "^3.1.8"
+  }
+}
