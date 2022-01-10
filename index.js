@@ -1,5 +1,5 @@
-const plugin = require('windicss/plugin')
-const {generateFontSize} = require('windicss/utils')
+const plugin = require('windicss/plugin');
+const {generateFontSize} = require('windicss/utils');
 
 function isNumberLead(i) {
   return /^\d/.test(i) ? i : undefined;
@@ -10,8 +10,8 @@ function isNumber(value) {
   return typeof n === 'number' && isFinite(n) && value === n.toString();
 }
 
-const globalValues = ['inherit', 'initial', 'unset']
-const stringValues = ['smaller', 'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large', 'larger']
+const globalValues = ['inherit', 'initial', 'unset'];
+const stringValues = ['smaller', 'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large', 'larger'];
 
 module.exports = plugin(function ({ addDynamic, theme }) {
   addDynamic('font', ({ Utility, Style, Property }) => {
@@ -21,7 +21,7 @@ module.exports = plugin(function ({ addDynamic, theme }) {
     const fontSizes = theme('fontSize');
 
     if (Object.keys(fontSizes).includes(amount)) {
-      return new Style(Utility.class, generateFontSize(fontSizes[amount])[0])
+      return new Style(Utility.class, generateFontSize(fontSizes[amount])[0]);
     }
 
     let value = Utility.handler
