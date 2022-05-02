@@ -17,15 +17,13 @@
 ## Usage
 
 ```bash
-npm i https://github.com/idmytro/windicss-plugin-font-size.git -D
+npm i windicss-plugin-font-size -D
 ```
 
 ```js
 // windi.config.js
 
 module.exports = {
-  plugins: [
-    require('windicss-plugin-font-size')
-  ]
-}
+  plugins: [require("windicss-plugin-font-size")],
+};
 ```
