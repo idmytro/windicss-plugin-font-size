@@ -14,7 +14,7 @@
 
 `class="font-size-inherit"` `->` `.font-size-inherit { font-size: inherit; }`
 
-`class="font-size-[calc(10vh+5px)]"` `->` `..font-size-\[calc\(10vh\+5px\)\] { font-size: calc(10vh + 5px); }`
+`class="font-size-[calc(10vh+5px)]"` `->` `.font-size-\[calc\(10vh\+5px\)\] { font-size: calc(10vh + 5px); }`
 
 
 ## Usage
