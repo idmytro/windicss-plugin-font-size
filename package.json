@@ -1,6 +1,6 @@
 {
   "name": "windicss-plugin-font-size",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Missing pure font-size plugin for Windicss",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/idmytro/windicss-plugin-font-size#readme",
   "dependencies": {
-    "windicss": "^3.1.8"
+    "windicss": "^3.5.6"
   }
 }

@@ -14,6 +14,9 @@
 
 `class="font-size-inherit"` `->` `.font-size-inherit { font-size: inherit; }`
 
+`class="font-size-[calc(10vh+5px)]"` `->` `..font-size-\[calc\(10vh\+5px\)\] { font-size: calc(10vh + 5px); }`
+
+
 ## Usage
 
 ```bash
@@ -24,6 +27,8 @@ npm i windicss-plugin-font-size -D
 // windi.config.js
 
 module.exports = {
-  plugins: [require("windicss-plugin-font-size")],
+  plugins: [
+    require('windicss-plugin-font-size'),
+  ],
 };
 ```

@@ -1,10 +1,6 @@
 const plugin = require('windicss/plugin');
 const {generateFontSize} = require('windicss/utils');
 
-function isNumberLead(i) {
-  return /^\d/.test(i) ? i : undefined;
-}
-
 function isNumber(value) {
   const n = parseFloat(value);
   return typeof n === 'number' && isFinite(n) && value === n.toString();
@@ -25,7 +21,7 @@ module.exports = plugin(function ({ addDynamic, theme }) {
     }
 
     let value = Utility.handler
-      .handleSquareBrackets(isNumberLead)
+      .handleSquareBrackets()
       .handleNxl((number) => `${number}rem`)
       .handleSize()
       .value;
